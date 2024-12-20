@@ -146,6 +146,19 @@ variable "new_instance_type" {
   type        = string
 }
 
+# Route 53 variables
+
+variable "domain_name" {
+  description = "The domain name for the website"
+  type        = string
+  #default     = "inyeza86.com"
+}
+
+variable "record_name" {
+  description = "The name of the A record for the website"
+  type        = string
+  #default     = "www"
+}
 # # Data migration AMI variable
 # variable "ami_id" {
 #   description = "The AMI ID to use for the EC2 instance"
