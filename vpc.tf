@@ -169,7 +169,7 @@ resource "aws_nat_gateway" "dev-nat-gateway-az2" {
   subnet_id     = aws_subnet.my_public_subnet2.id
 
   tags = {
-    Name = "${var.environment}-NATGW-AZ1"
+    Name = "${var.environment}-NATGW-AZ2"
   }
 
   # To ensure proper ordering, it is recommended to add an explicit dependency

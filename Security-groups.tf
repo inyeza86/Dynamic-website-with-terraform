@@ -87,6 +87,14 @@ resource "aws_security_group" "data-migration-server-sg" {
     protocol        = "tcp"
     security_groups = [aws_security_group.ec2-instance-connect-endpoint-sg.id]
   }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+    description = "Allow all outbound traffic"
+  }
   tags = {
     Name = "${var.environment}-Data-migration-server-SG"
   }
