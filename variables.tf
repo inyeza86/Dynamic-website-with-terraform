@@ -115,13 +115,13 @@ variable "database_name" {
   #default     = "devdb"
 }
 
-# # Application load balancer variables
-# variable "ssl_certifiacte_arn" {
-#   description = "The ARN of the SSL certificate to use for the ALB"
-#   type        = string
-#   default     = "arn:aws:acm:us-east-1:473208108378:certificate/fcd879ea-2e8a-4c1c-93cc-e12729e0aa2a"
+# Application load balancer variables
+variable "ssl_certificate_arn" {
+  description = "The ARN of the SSL certificate to use for the ALB"
+  type        = string
+  #default     = "arn:aws:acm:us-east-1:473208108378:certificate/fcd879ea-2e8a-4c1c-93cc-e12729e0aa2a"
 
-# }
+}
 
 # # SNS topic variables
 # variable "notification_email" {
