@@ -130,6 +130,22 @@ variable "notification_email" {
   #default     = "inyeza.amedimele86@gmail.com"
 }
 
+# auto scaling group variables
+variable "launch_template_name" {
+  description = "name of the launch template"
+  type        = string
+}
+
+variable "ec2_image_id" {
+  description = "the AMI to launch the template"
+  type        = string
+}
+
+variable "new_instance_type" {
+  description = "the instance from the AMI"
+  type        = string
+}
+
 # # Data migration AMI variable
 # variable "ami_id" {
 #   description = "The AMI ID to use for the EC2 instance"
