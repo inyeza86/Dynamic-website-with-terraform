@@ -130,17 +130,17 @@ variable "database_name" {
 #   default     = "inyeza.amedimele86@gmail.com"
 # }
 
-# Data migration AMI variable
-variable "ami_id" {
-  description = "The AMI ID to use for the EC2 instance"
-  type        = string
-}
+# # Data migration AMI variable
+# variable "ami_id" {
+#   description = "The AMI ID to use for the EC2 instance"
+#   type        = string
+# }
 
-# Data migration ec2 instance_type
-variable "ec2_instance_type" {
-  description = "The type of EC2 instance to use"
-  type        = string
-}
+# # Data migration ec2 instance_type
+# variable "ec2_instance_type" {
+#   description = "The type of EC2 instance to use"
+#   type        = string
+# }
 
 
 
