@@ -123,12 +123,12 @@ variable "ssl_certificate_arn" {
 
 }
 
-# # SNS topic variables
-# variable "notification_email" {
-#   description = "The email address to send notifications to"
-#   type        = string
-#   default     = "inyeza.amedimele86@gmail.com"
-# }
+# SNS topic variables
+variable "notification_email" {
+  description = "The email address to send notifications to"
+  type        = string
+  #default     = "inyeza.amedimele86@gmail.com"
+}
 
 # # Data migration AMI variable
 # variable "ami_id" {
