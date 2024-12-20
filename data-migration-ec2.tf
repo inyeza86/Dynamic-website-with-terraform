@@ -1,4 +1,4 @@
-# Create an EC2 Instance
+# #Create an EC2 Instance
 # resource "aws_instance" "data-migration-ec2" {
 #   ami                    = var.ami_id # Replace with your desired AMI
 #   instance_type          = var.ec2_instance_type
