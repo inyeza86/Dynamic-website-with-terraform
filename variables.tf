@@ -53,67 +53,67 @@ variable "private_data_subnet_az2_cidr" {
 #   type        = string
 # }
 
-# # database variables
-# variable "db-username" {
-#   description = "the username of the database"
-#   type        = string
-# }
+# database variables
+variable "db-username" {
+  description = "the username of the database"
+  type        = string
+}
 
-# variable "db-password" {
-#   description = "the password of the database"
-#   type        = string
-# }
+variable "db-password" {
+  description = "the password of the database"
+  type        = string
+}
 
-# variable "db_instance_class" {
-#   default     = "db.t3.micro"
-#   type        = string
-#   description = "database instance type"
-# }
+variable "db_instance_class" {
+  #default     = "db.t3.micro"
+  type        = string
+  description = "database instance type"
+}
 
-# variable "db_identifier" {
-#   default     = "dev-db"
-#   type        = string
-#   description = "database identifier"
+variable "db_identifier" {
+  # default     = "dev-db"
+  type        = string
+  description = "database identifier"
 
-# }
+}
 
-# variable "multi_az_deployment" {
-#   default     = false
-#   type        = bool
-#   description = "create a standby db instance"
+variable "multi_az_deployment" {
+  default     = false
+  type        = bool
+  description = "create a standby db instance"
 
-# }
+}
 
-# variable "engine_type" {
-#   default     = "mysql"
-#   type        = string
-#   description = "create a mysql db instance"
+variable "engine_type" {
+  #default     = "mysql"
+  type        = string
+  description = "create a mysql db instance"
 
-# }
+}
 
-# variable "engine_version" {
-#   description = "The version of the database engine (e.g., 8.0 for MySQL)"
-#   type        = string
-#   #default     = "8.0.39"
-# }
+variable "engine_version" {
+  description = "The version of the database engine (e.g., 8.0 for MySQL)"
+  type        = string
+  #default     = "8.0.39"
+}
 
-# variable "allocated_storage" {
-#   description = "The amount of storage (in GB) to allocate for the database"
-#   type        = number
-#   #default     = 20
-# }
+variable "allocated_storage" {
+  description = "The amount of storage (in GB) to allocate for the database"
+  type        = number
+  #default     = 20
+}
 
-# variable "storage_type" {
-#   description = "The type of storage to use (e.g., gp2 for General Purpose SSD)"
-#   type        = string
-#   default     = "gp2"
-# }
+variable "storage_type" {
+  description = "The type of storage to use (e.g., gp2 for General Purpose SSD)"
+  type        = string
+  #default     = "gp2"
+}
 
-# variable "database_name" {
-#   description = "The name of the database to create"
-#   type        = string
-#   default     = "devdb"
-# }
+variable "database_name" {
+  description = "The name of the database to create"
+  type        = string
+  #default     = "devdb"
+}
 
 # # Application load balancer variables
 # variable "ssl_certifiacte_arn" {
